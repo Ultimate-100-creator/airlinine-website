@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll-Activated Marquee</title>
+    <style>
+        body {
+            height: 2000px; /* Just to enable scrolling */
+        }
+        .marquee-container {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            background-color: #f3f3f3;
+            padding: 10px 0;
+            box-sizing: border-box;
+        }
+        .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee-container">
+        <div class="marquee">
+            This text moves when you scroll!
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const marquee = document.querySelector('.marquee');
+            const scrollPosition = window.scrollY;
+            marquee.style.transform = `translateX(-${scrollPosition}px)`;
+        });
+    </script>
+</body>
+</html>

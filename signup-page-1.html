@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/signup-page.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <title>British Login Page</title>
+</head>
+<body>
+
+      <!-- Header Section -->
+      <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo-light.png" alt="British Airways Logo" class="logo">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="airway-home-page.html">Home</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Holidays</a></li>
+                    <li><a href="Privilege-club-page.html">Privilege Club</a></li>
+                    <li><a href="#">Manage My Booking</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <form class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="account-options">
+                    <a href="login-page.html">Log In</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="conatiner-container" style="
+      width: 100%;
+      background-image: url('magnolia-flowers-spring-eiffel-tower-paris_16-9.jpg');
+      background-size: cover; /* Ensures the image covers the entire container */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      padding: 20px;
+      margin-top: -75px;
+      margin-bottom: 275px;
+    ">
+      <div class="container" style="
+        background-color: #f9f9f9;
+      ">
+        <div class="Log-in-text">
+            Sign Up
+        </div>
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Phone number, Username, or email" required>
+
+            <!-- Country Code Dropdown and Mobile Number -->
+            <div class="form-group">
+                <select id="country-code" onchange="updatePhoneNumber()">
+                    <option value="+">Select country code</option>
+                    <option value="+1" data-maxlength="10">+1 (USA)</option>
+                    <option value="+44" data-maxlength="10">+44 (UK)</option>
+                    <option value="+91" data-maxlength="10">+91 (India)</option>
+                    <option value="+43" data-maxlength="10">+43 (Austria)</option>
+                    <option value="+49" data-maxlength="10">+49 (Germany)</option>
+                    <option value="+61" data-maxlength="9">+61 (Australia)</option>
+                    <option value="+81" data-maxlength="9">+81 (Japan)</option>
+                    <option value="+86" data-maxlength="11">+86 (China)</option>
+                    <option value="+49" data-maxlength="10">+49 (Germany)</option>
+                    <option value="+33" data-maxlength="9">+33 (France)</option>
+                    <option value="+39" data-maxlength="10">+39 (Italy)</option>
+                    <option value="+34" data-maxlength="9">+34 (Spain)</option>
+                    <option value="+234" data-maxlength="15">+234 (Nigeria)</option>
+                    <option value="+229" data-maxlength="13">+229 (Benin)</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="tel" inputmode="numeric" id="mobile" maxlength="10" placeholder="Enter your mobile number" required oninput="this.value = this.value.replace(/[^0-9+]/g, '')">
+            </div>
+
+            <div class="input-container">
+              <input type="password" id="password" required placeholder="Password" name="password" class="password-input">
+              <button id="show-hide-btn" type="button" onclick="showHidePassword()" class="hide-btn">Show</button>
+            </div>
+
+            
+            
+            
+            <a type="submit-btn" class="log-in-button"
+            href='signup-page-2.html'>Next</a>
+                    
+            <div class="login-container">
+              <div class="login-inputs">
+                <!-- Input fields and login button -->
+              </div>
+
+              <div class="alternative-login">
+                <!-- Alternative login options (e.g., Facebook, Google) -->
+              </div>
+            </div>
+
+              <div class="login with facebook">
+
+              <div class="forgot-password">Forgot password?</div>
+              </div>
+          </form>
+      </div>   
+
+      <div class="container-2" style="
+        background-color: #f9f9f9;
+      ">
+        <div class="signup-link">
+          <span class="dont-have-an-account">Already have an account</span> <span class="sign-up"><a href="login-page.html">Log in</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+
+        <div class="logo-container">
+          <img src="images/logo.png" class="bottom-logo">
+        </div>
+
+          <div class="footer-links">
+              <a href="#">About Us</a>
+              <a href="#">Contact</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+          </div>
+          <p>&copy; 2024 British Airways. All Rights Reserved.</p>
+
+          
+      </div>
+  </footer>
+
+    
+
+    <script>
+      function showHidePassword() {
+        const passwordInput = document.getElementById('password');
+        const showHideBtn = document.getElementById('show-hide-btn');
+        if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+          showHideBtn.textContent = 'Hide';
+        } else {
+          passwordInput.type = 'password';
+          showHideBtn.textContent = 'Show';
+        }
+      }
+
+    </script>
+
+    <script src="signup-page.js"></script>
+</body>
+</html>

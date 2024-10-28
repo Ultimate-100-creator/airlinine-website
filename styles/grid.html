@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+    <style>
+        .eba {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: repeat(4, auto);
+            gap: 10px;
+        }
+        .eba:nth-child(2) {
+            grid-template-columns: 1fr 1fr 2fr;
+        }
+        .eba:nth-child(3) {
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+        .eba:nth-child(4) {
+            grid-template-columns: 1fr 1fr 2fr;
+        }
+        .eba {
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .eba img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="eba">
+        <div class="eba">
+            <img src="path/to/your/image1.jpg" alt="Image 1">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="eba">
+            <img src="path/to/your/image2.jpg" alt="Image 2">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="eba">
+            <img src="path/to/your/image3.jpg" alt="Image 3">
+            <p>Paul Is a container</p>
+        </div>
+    </div>
+    <div class="eba">
+        <div class="eba">
+            <img src="path/to/your/image4.jpg" alt="Image 4">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="eba">
+            <img src="path/to/your/image5.jpg" alt="Image 5">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="eba">
+            <img src="path/to/your/image6.jpg" alt="Image 6">
+            <p>Paul Is a container</p>
+        </div>
+    </div>
+    <div class="eba">
+        <div class="eba">
+            <img src="path/to/your/image7.jpg" alt="Image 7">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="eba">
+            <img src="path/to/your/image8.jpg" alt="Image 8">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="eba">
+            <img src="path/to/your/image9.jpg" alt="Image 9">
+            <p>Paul Is a container</p>
+        </div>
+    </div>
+    <div class="eba">
+        <div class="eba">
+            <img src="path/to/your/image10.jpg" alt="Image 10">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="eba">
+            <img src="path/to/your/image11.jpg" alt="Image 11">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="eba">
+            <img src="path/to/your/image12.jpg" alt="Image 12">
+            <p>Paul Is a container</p>
+        </div>
+    </div>
+</body>
+</html>

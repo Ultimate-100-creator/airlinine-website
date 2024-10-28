@@ -1,0 +1,346 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/signup-page.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <title>British Login Page</title>
+
+    <style>
+      /* Pop-up styles */
+      .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 1px solid #004175;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        width: 300px;
+        text-align: center;
+      }
+
+      .popup button {
+        background-color: #004175;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .popup button:hover {
+        background-color: #00315a;
+      }
+
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo-light.png" alt="British Airways Logo" class="logo">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="airway-home-page.html">Home</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Holidays</a></li>
+                    <li><a href="Privilege-club-page.html">Privilege Club</a></li>
+                    <li><a href="#">Manage My Booking</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <form class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="account-options">
+                    <a href="login-page.html">Log In</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="conatiner-container" style="
+      width: 100%;
+      background-image: url('magnolia-flowers-spring-eiffel-tower-paris_16-9.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20px;
+      margin-top: -75px;
+      margin-bottom: 275px;
+    ">
+      <div class="container" style="
+        background-color: #f9f9f9;
+      ">
+        <div class="Log-in-text">
+            Sign Up
+        </div>
+
+        <!-- Form Fields -->
+        <div class="form-group">
+          <label for="dob">Date of Birth (required)</label>
+          <input type="date" id="dob" required>
+        </div>
+
+        <div class="form-group">
+          <label>Gender (required)</label>
+          <div class="radio-group">
+              <input type="radio" id="male" name="gender" value="male" required>
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female" required>
+              <label for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="residence">Country/Region of Residence</label>
+          <select id="residence">
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Angola">Angola</option>
+            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Armenia">Armenia</option>
+            <option value="Australia">Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Azerbaijan">Azerbaijan</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Bahrain">Bahrain</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Barbados">Barbados</option>
+            <option value="Belarus">Belarus</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Belize">Belize</option>
+            <option value="Benin">Benin</option>
+            <option value="Bhutan">Bhutan</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+            <option value="Botswana">Botswana</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Brunei">Brunei</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Burkina Faso">Burkina Faso</option>
+            <option value="Burundi">Burundi</option>
+            <option value="Cabo Verde">Cabo Verde</option>
+            <option value="Cambodia">Cambodia</option>
+            <option value="Cameroon">Cameroon</option>
+            <option value="Canada">Canada</option>
+            <option value="Central African Republic">Central African Republic</option>
+            <option value="Chad">Chad</option>
+            <option value="Chile">Chile</option>
+            <option value="China">China</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Comoros">Comoros</option>
+            <option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option>
+            <option value="Congo, Republic of the">Congo, Republic of the</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Cyprus">Cyprus</option>
+            <option value="Czech Republic">Czech Republic</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Djibouti">Djibouti</option>
+            <option value="Dominica">Dominica</option>
+            <option value="Dominican Republic">Dominican Republic</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Egypt">Egypt</option>
+            <option value="El Salvador">El Salvador</option>
+            <option value="Equatorial Guinea">Equatorial Guinea</option>
+            <option value="Eritrea">Eritrea</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Eswatini">Eswatini</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Fiji">Fiji</option>
+            <option value="Finland">Finland</option>
+            <option value="France">France</option>
+            <option value="Gabon">Gabon</option>
+            <option value="Gambia">Gambia</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Germany">Germany</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Greece">Greece</option>
+            <option value="Grenada">Grenada</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="Guinea">Guinea</option>
+            <option value="Guinea-Bissau">Guinea-Bissau</option>
+            <option value="Guyana">Guyana</option>
+            <option value="Haiti">Haiti</option>
+            <option value="Honduras">Honduras</option>
+            <option value="Hungary">Hungary</option>
+            <option value="Iceland">Iceland</option>
+            <option value="India">India</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Iran">Iran</option>
+            <option value="Iraq">Iraq</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Israel">Israel</option>
+            <option value="Italy">Italy</option>
+            <option value="Jamaica">Jamaica</option>
+            <option value="Japan">Japan</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Kazakhstan">Kazakhstan</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Kiribati">Kiribati</option>
+            <option value="Korea, North">Korea, North</option>
+            <option value="Korea, South">Korea, South</option>
+            <option value="Kosovo">Kosovo</option>
+            <option value="Kuwait">Kuwait</option>
+            <option value="Kyrgyzstan">Kyrgyzstan</option>
+            <option value="Laos">Laos</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Lebanon">Lebanon</option>
+            <option value="Lesotho">Lesotho</option>
+            <option value="Liberia">Liberia</option>
+            <option value="Libya">Libya</option>
+            <option value="Liechtenstein">Liechtenstein</option>
+            <option value="Lithuania">Lithuania</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Madagascar">Madagascar</option>
+            <option value="Malawi">Malawi</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Maldives">Maldives</option>
+            <option value="Mali">Mali</option>
+            <option value="Malta">Malta</option>
+            <option value="Marshall Islands">Marshall Islands</option>
+            <option value="Mauritania">Mauritania</option>
+            <option value="Mauritius">Mauritius</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Micronesia">Micronesia</option>
+            <option value="Moldova">Moldova</option>
+            <option value="Monaco">Monaco</option>
+            <option value="Mongolia">Mongolia</option>
+            <option value="Montenegro">Montenegro</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Mozambique">Mozambique</option>
+            <option value="Myanmar (Burma)">Myanmar (Burma)</option>
+            <option value="Namibia">Namibia</option>
+            <option value="Nauru">Nauru</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Nicaragua">Nicaragua</option>
+            <option value="Niger">Niger</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="North Macedonia">North Macedonia</option>
+            <option value="Norway">Norway</option>
+            <option value="Oman">Oman</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Palau">Palau</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Panama">Panama</option>
+            <option value="Papua New Guinea">Papua New Guinea</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Peru">Peru</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Poland">Poland</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Qatar">Qatar</option>
+            <option value="Romania">Romania</option>
+            <option value="Russia">Russia</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+              <!-- Add more options as needed -->
+          </select>
+        </div>
+
+        <!-- Signup Button -->
+        <button type="button" class="log-in-button" onclick="validateAndSubmitForm()" style="
+        position: relative;
+        top: -100;
+        left: 2.5px;
+        ">Sign up</button>
+
+
+    <!-- Popup Overlay for Success Message -->
+    <div class="overlay" id="signup-overlay"></div>
+    <div class="popup" id="signup-popup">
+      <h3>Success!</h3>
+      <p>Your account has been created successfully.</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+
+    <!-- Popup Overlay for Terms Agreement -->
+     <!-- onclick="closeTermsPopup()" -->
+    <div class="overlay" id="terms-overlay"></div>
+    <div class="popup" id="terms-popup">
+      <h3>Terms Agreement Required</h3>
+      <p>Please agree to the Terms and Conditions to proceed.</p>
+      <button onclick="closeTermsPopup()">OK</button>
+    </div>
+    </div>
+
+    <div class="container-2" style="
+    background-color: #f9f9f9;
+  ">
+    <div class="signup-link">
+      <span class="dont-have-an-account">Already have an account</span> <span class="sign-up"><a href="login-page.html">Log in</a></span>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="logo-container">
+          <img src="images/logo.png" class="bottom-logo">
+        </div>
+
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <p>&copy; 2024 British Airways. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+        // Function to display the signup success popup
+        function showSignupSuccessPopup() {
+            document.getElementById('signup-overlay').style.display = 'block';
+            document.getElementById('signup-popup').style.display = 'block';
+        }
+
+        // Function to close the signup success popup
+        function closePopup() {
+            document.getElementById('signup-overlay').style.display = 'none';
+            document.getElementById('signup-popup').style.display = 'none';
+        }
+
+        // Function to validate form and show popup
+        function validateAndSubmitForm() {
+            // Add form validation logic here if needed
+            showSignupSuccessPopup();
+        }
+    </script>
+</body>
+</html>

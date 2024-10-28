@@ -1,0 +1,228 @@
+/* styles.css */
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #004080;
+  padding-top: 150px;
+}
+
+/*
+.container-container {
+  width: 100%;
+  height: 300px;
+  background-image: url('download-2.jpg');
+  background-size: cover; /* Ensures the image covers the entire container *//*
+  background-position: center; /* Centers the image *//*
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+ /* 
+}*/
+
+.Log-in-text {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 25px;
+  cursor: default;
+}
+
+
+/* Container for the login form */
+.container {
+  max-width: 325px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border-color: rgb(201, 201, 201);
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /*background-color: rgb(var(--ig-primary-background));*/
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  margin-bottom: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.container-2 {
+  max-width: 325px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border-color: rgb(201, 201, 201);
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(var(--ig-primary-background));
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+} 
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+  width: 250px;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 12px;
+  vertical-align: center;
+  background-color: rgb(245, 245, 245);
+  transform: translateY(0%);
+  transform: translateX(5%);
+  position: relative;
+}
+
+input{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+input[type="text"]:hover {
+  border-radius: 2px;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit:hover {
+  background-color: #003366;
+}
+
+/*
+button[type="submit"]:hover {
+  background-color: #374fc9;
+}
+*/
+
+/* Sign-up link */
+.signup-link a {
+  color: rgb(0, 149, 246);
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.password-container {
+  position: relative;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#show-hide-btn {
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 10;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin-left: 230px;
+}
+
+#show-hide-btn:hover {
+  color: rgb(125, 125, 125);
+}
+
+.input-container {
+	position: relative;
+}
+
+.password-input {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.hide-btn {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-200%);
+	background-color: #007bff;
+	border: none;
+	cursor: pointer;
+  }
+
+.login-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.forgot-password {
+  color: rgb(0, 55, 107);
+  font-family: arial;
+  font-size: 12px;
+  font-stretch: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password:hover {
+  cursor: default;
+}
+
+.signup-link {
+  font-family: arial;
+  font-size: 14px;
+  text-align: center;
+}
+
+.dont-have-an-account {
+  text-align: center;
+}
+
+.sign-up {
+  font-weight: bold;
+}
+
+.log-in-button {
+  /*width: 100%;*/
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 110px;
+  padding-right: 110px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  right: 35px; /* Adjust as needed */
+}
+
+.log-in-button:hover {
+  background-color: #003264;
+}

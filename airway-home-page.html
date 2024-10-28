@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>British Airways</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/airways-webpage.css">
+    <link rel="stylesheet" href="styles/airway-grid.css">
+    <link rel="stylesheet" href="styles/airway-grid-2.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo-light.png" alt="British Airways Logo" class="logo">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="airway-home-page.html">Home</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Holidays</a></li>
+                    <li><a href="Privilege-club-page.html">Privilege Club</a></li>
+                    <li><a href="#">Manage My Booking</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <form class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="account-options">
+                    <a href="login-page.html">Log In</a>
+                    <a href="help-page.html">Help</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="background-image" style="
+    background-image: url('download.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    ">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to British Airways</h1>
+            
+            <marquees class="second-header" behavior="scroll" direction="left" scrollamount="5">
+               <p>Discover the world with us. Book flights, holidays, and more.</p> 
+            </marquees>
+
+            <a href="#flight-booking" class="cta-btn">Book Now</a>
+        </div>
+    </section>    
+    </section>
+
+    <section class="flight-booking" id="flight-booking">
+      <div class="form-container" id="form-container">
+          <h2>Book Your Flight</h2>
+          <form id="flightForm">
+              <div class="form-group">
+                  <label for="from" class="label">From</label>
+                  <input type="text" id="from" name="from" placeholder="Enter departure city" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="to" class="label">To</label>
+                  <input type="text" id="to" name="to" placeholder="Enter destination city" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="depart" class="label">Departure Date</label>
+                  <input type="date" id="depart" name="depart" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="return" class="label">Return Date</label>
+                  <input type="date" id="return" name="return" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="passengers" class="label">Passengers</label>
+                  <input type="number" id="passengers" name="passengers" min="1" max="10" value="1" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="class" class="label">Class</label>
+                  <select id="class" name="class">
+                      <option value="economy">Economy</option>
+                      <option value="business">Business</option>
+                      <option value="first">First Class</option>
+                  </select>
+              </div>
+
+              <button type="submit" class="submit-btn">Search Flights</button>
+          </form>
+      </div>
+  </section>
+
+  <section class="grid-tab">
+    <div class="grid-item" onclick="window.location.href='grid webpage/sustainability.html'">
+      <img src="images/airplane hanger.jpg" alt="Image 1">
+      <div class="tab-header">Sustainability at our heart</div>
+      <div class="content-tab">With a focus on people, planet and responsible business, we’re transforming our airline for a more sustainable future.</div>
+    </div>
+    <div class="grid-item" onclick="window.location.href='grid webpage/sustainability.html'">
+      <img src="images/club-world-cabin-crew-customer-business_16-9.jpg" alt="Image 2">
+      <div class="tab-header">Experience the luxury of business class</div>
+      <div class="content-tab">With a focus on people, planet and responsible business, we’re transforming our airline for a more sustainable future.</div>
+    </div>
+    <div class="grid-item" onclick="window.location.href='grid webpage/sustainability.html'">
+      <img src="images/adult-child-christmas-market-nice_16-9.jpg" alt="Image 3">
+      <div class="tab-header">Discover a magical European holiday</div>
+      <div class="content-tab">Prices include flight taxes, fees and carrier charges. Vacation price is per person, double occupancy. Other departure cities, travel dates and destinations available at varying prices. Terms apply.</div>
+    </div>
+    <div class="grid-item" onclick="window.location.href='grid webpage/sustainability.html'">
+      <img src="images/magnolia-flowers-spring-eiffel-tower-paris_16-9.jpg" alt="Image 4">
+      <div class="tab-header">Discover a magical European holiday</div>
+      <div class="content-tab">Prices include flight taxes, fees and carrier charges. Vacation price is per person, double occupancy. Other departure cities, travel dates and destinations available at varying prices. Terms apply.</div>
+    </div>
+    <div class="grid-item" onclick="window.location.href='grid webpage/sustainability.html'">
+      <img src="images/chase-british-airways-visa-signature-credit-card_1200x675.jpg" alt="Image 5">
+      <div class="tab-header">Limited time offer: Earn 100,000 Avios</div>
+      <div class="content-tab">Apply for the British Airways Visa Signature® Card and earn 100,000 Avios when you spend $7,500 on purchases within the first 6 months of account opening.<br>Offer ends November 13, 2024.</div>
+    </div>
+    <div class="grid-item" onclick="window.location.href='grid webpage/sustainability.html'">
+      <img src="images/495811860_1200x675.jpg" alt="Image 6">
+      <div class="tab-header">Earn Double Tier Points on Vacations</div>
+      <div class="content-tab">If you're an Executive Club Member you can now earn double Tier Points on flights taken as part of a vacation package with British Airways. Simply book a vacation package for travel before June 30, 2025 with at least five nights hotel or car and add your membership number before you travel. Terms apply.</div>
+    </div>
+    <div class="grid-item" onclick="window.location.href='grid webpage/sustainability.html'">
+      <img src="images/558863921_600x337.jpg" alt="Image 7">
+      <div class="tab-header">Fly-drive vacations</div>
+      <div class="content-tab">Explore at your own pace, discovering charming villages, historic sites, and reconnecting with friends and family.</div>
+    </div>
+    <div class="grid-item" onclick="window.location.href='grid webpage/sustainability.html'">
+      <img src="images/626545252_1200x675.jpg" alt="Image 8">
+      <div class="tab-header">Europe Vacations</div>
+      <div class="content-tab">Explore Europe with our amazing vacation deals. Secure your dream vacation with a small deposit and flexible payments.</div>
+    </div>
+    <div class="grid-item" onclick="window.location.href='grid webpage/sustainability.html'">
+      <img src="images/Screenshot 2024-10-23 185743.jpg" alt="Image 9">
+      <div class="tab-header">Far off cities</div>
+      <div class="content-tab">A trip of a lifetime awaits.<br>From New York, March 2025<br>Prices quoted are round-trip, include all taxes, fees and carrier charges. Other terms apply.</div>
+    </div>
+    <div class="grid-item" onclick="window.location.href='grid webpage/sustainability.html'">
+      <img src="images/Exec-Club_All-Tiers_600x337.jpg" alt="Image 10">
+      <div class="tab-header">Join our Executive Club</div>
+      <div class="content-tab">Enjoy booking quicker, paying with Avios, earning rewards and receiving special offers as an Executive Club Member.</div>
+    </div>
+  </section>
+  
+
+    <div class="air-hostess" style="
+        background-image: url('images/h1-ffp-cards-qsuite-crew.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        position: relative;
+    ">
+        <div class="join-privilege-club-container">
+            <h3 style="
+                font-size: 25px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 100;
+                margin-bottom: 25px;
+                ">Join Privilege Club</h3>
+
+            <div class="join-privilege-club-content">Earn Avios and use them towards shopping at British Duty Free, flights, upgrades, extra baggage, and more exclusive benefits</div>
+
+            <button class="Join-now-button" onclick="window.location.href='previlege-club-form.html'">Join Now</button>
+        </div>
+    </div>
+
+
+    <!-- Featured Flights Section -->
+    <section class="featured-flights">
+
+        <h2>Featured Flights</h2>
+        <div class="flight-cards">
+            
+            <div class="flight-card">
+
+                <h3>London to New York</h3>
+                <p>From £299</p>
+
+                <a href="#" class="book-btn" onclick="bookedAlert()">Book Flight</a>
+            </div>
+
+            <div class="flight-card">
+                <h3>London to Paris</h3>
+                <p>From £99</p>
+                <a href="#" class="book-btn">Book Flight</a>
+            </div>
+
+            <div class="flight-card">
+                <h3>London to Tokyo</h3>
+                <p>From £499</p>
+                <a href="#" class="book-btn">Book Flight</a>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="grid-2-container">
+        <div class="grid-content">
+            <img src="path/to/your/image1.jpg" alt="Image 1">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="grid-content">
+            <img src="path/to/your/image2.jpg" alt="Image 2">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="grid-content">
+            <img src="path/to/your/image3.jpg" alt="Image 3">
+            <p>Paul Is a container</p>
+        </div>
+    </div>
+    <div class="grid-2-container">
+        <div class="grid-content">
+            <img src="path/to/your/image4.jpg" alt="Image 4">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="grid-content">
+            <img src="path/to/your/image5.jpg" alt="Image 5">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="grid-content">
+            <img src="path/to/your/image6.jpg" alt="Image 6">
+            <p>Paul Is a container</p>
+        </div>
+    </div>
+    <div class="grid-2-container">
+        <div class="grid-content">
+            <img src="path/to/your/image7.jpg" alt="Image 7">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="grid-content">
+            <img src="path/to/your/image8.jpg" alt="Image 8">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="grid-content">
+            <img src="path/to/your/image9.jpg" alt="Image 9">
+            <p>Paul Is a container</p>
+        </div>
+    </div>
+    <div class="grid-2-container">
+        <div class="grid-content">
+            <img src="path/to/your/image10.jpg" alt="Image 10">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="grid-content">
+            <img src="path/to/your/image11.jpg" alt="Image 11">
+            <p>Paul Is a container</p>
+        </div>
+        <div class="grid-content">
+            <img src="path/to/your/image12.jpg" alt="Image 12">
+            <p>Paul Is a container</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+
+          <div class="logo-container">
+            <img src="images/logo.png" class="bottom-logo">
+          </div>
+
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p>&copy; 2024 British Airways. All Rights Reserved.</p>
+
+            
+        </div>
+    </footer>
+
+    <script src="script.js">
+      // Select the form and add event listener for submit
+document.getElementById('flightForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Get values from the form fields
+    const from = document.getElementById('from').value;
+    const to = document.getElementById('to').value;
+    const depart = document.getElementById('depart').value;
+    const returnDate = document.getElementById('return').value;
+    const passengers = document.getElementById('passengers').value;
+    const flightClass = document.getElementById('class').value;
+
+    // Basic validation for departure and return dates
+    if (new Date(returnDate) < new Date(depart)) {
+        alert("Return date cannot be before the departure date.");
+        return;
+    }
+
+    // Display flight booking summary (just a simple alert for now)
+    alert(`Flight Search: \nFrom: ${from}\nTo: ${to}\nDeparture: ${depart}\nReturn: ${returnDate}\nPassengers: ${passengers}\nClass: ${flightClass}`);
+
+    // Here, you would typically submit the data to a server or handle it accordingly
+});
+
+function bookedAlert() {
+      alert("flight has been booked!");
+    }
+
+
+    </script>
+</body>
+</html>

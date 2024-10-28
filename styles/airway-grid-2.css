@@ -1,0 +1,25 @@
+        .grid-2-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: repeat(4, auto);
+            gap: 10px;
+        }
+        .grid-2-container:nth-child(2) {
+            grid-template-columns: 1fr 1fr 2fr;
+        }
+        .grid-2-container:nth-child(3) {
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+        .grid-2-container:nth-child(4) {
+            grid-template-columns: 1fr 1fr 2fr;
+        }
+        .grid-content {
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-content img {
+            width: 100%;
+            height: auto;
+        }

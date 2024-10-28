@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>British Airways - Manage My Bookings</title>
+
+  <link rel="stylesheet" href="xoxo.css">
+
+
+
+</head>
+<body>
+  <header>
+    <h1>Manage My Bookings - British Airways</h1>
+    <p>Find and manage your upcoming flights with ease.</p>
+  </header>
+
+  <section class="manage-bookings">
+    <h2>Find Your Booking</h2>
+    <form id="booking-search-form">
+      <label for="booking-reference">Booking Reference:</label>
+      <input type="text" id="booking-reference" placeholder="Enter booking reference" required>
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" placeholder="Enter your last name" required>
+
+      <button type="submit">Search Booking</button>
+    </form>
+  </section>
+
+  <section class="booking-details" id="booking-details" style="display: none;">
+    <h2>Booking Details</h2>
+    <div id="booking-info">
+      <!-- Booking details will be displayed here -->
+    </div>
+    <button id="modify-booking" style="display: none;">Modify Booking</button>
+    <button id="cancel-booking" style="display: none;">Cancel Booking</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 British Airways. All Rights Reserved.</p>
+  </footer>
+
+  <script src="xoxo.js"></script>
+</body>
+</html>

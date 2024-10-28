@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #004175; /* Updated header color */
+}
+
+.form-container {
+  margin-top: 100px;
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sub-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004175; /* Updated header color */
+}
+
+.form-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #004175;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #004175; /* Updated subheading color */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.social-signup {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.radio-group input {
+  margin-right: 5px;
+}
+
+.note {
+  font-size: 12px;
+  color: #999;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  display: inline-block;
+  background-color: #004175; /* Updated button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #00315a;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.show-hide-btn {
+  border: none;
+  background-color: transparent;
+}

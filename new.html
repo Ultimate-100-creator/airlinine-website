@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .division {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid orange;
+    }
+    .sub-heading {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #800000; /* British Airways Maroon */
+    }
+    .input-group {
+      margin-bottom: 10px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input:focus, select:focus {
+      border-color: #800000;
+    }
+    button {
+      cursor: pointer;
+      background-color: #004175; /* Button color */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #002f57;
+    }
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .checkbox-group input {
+      width: auto;
+      margin-right: 10px;
+    }
+    .recaptcha {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>It only takes a minute to register for your account</h2>
+    </div>
+
+    <!-- First Division: Create Your Credentials -->
+    <div class="division">
+      <div class="sub-heading">Let's create your credentials</div>
+      <div class="input-group">
+        <button onclick="window.location.href='https://www.facebook.com/login';">
+          <img src="facebook-logo.png" alt="Facebook Logo" width="20"> Create an account using Facebook
+        </button>
+      </div>
+      <div class="input-group">
+        <button onclick="window.location.href='https://accounts.google.com/';">
+          <img src="google-logo.png" alt="Google Logo" width="20"> Create an account using Google
+        </button>
+      </div>
+      <div class="sub-heading">Or join by filling up the form below</div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+      </div>
+      <div class="input-group">
+        <label for="country-code">Country Code</label>
+        <select id="country-code">
+          <option value="+1">+1 (USA)</option>
+          <option value="+44">+44 (UK)</option>
+          <option value="+91">+91 (India)</option>
+          <option value="+81">+81 (Japan)</option>
+          <option value="+61">+61 (Australia)</option>
+          <option value="+234">+234 (Nigeria)</option>
+          <option value="+86">+86 (China)</option>
+          <option value="+49">+49 (Germany)</option>
+          <option value="+33">+33 (France)</option>
+          <!-- Add more countries and codes as needed -->
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="mobile-number">Mobile Number</label>
+        <input type="tel" id="mobile-number" required>
+      </div>
+    </div>
+
+    <!-- Second Division: Personal Details -->
+    <div class="division">
+      <div class="sub-heading">Your personal details</div>
+      <div class="input-group">
+        <label for="title">Title</label>
+        <select id="title">
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Ms">Ms</option>
+          <!-- Add other titles as needed -->
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" required>
+      </div>
+      <div class="input-group">
+        <label for="middle-name">Middle Name</label>
+        <input type="text" id="middle-name" required>
+      </div>
+      <div class="input-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" required>
+      </div>
+      <p>Your name must be entered in English as it appears on your passport.</p>
+      <div class="input-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required>
+      </div>
+      <div class="input-group">
+        <label>Gender</label>
+        <div class="checkbox-group">
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Division: Where Do You Live? -->
+    <div class="division">
+      <div class="sub-heading">Where do you live?</div>
+      <div class="input-group">
+        <label for="country-region">Country/Region of Residence</label>
+        <select id="country-region">
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="India">India</option>
+          <option value="Japan">Japan</option>
+          <option value="Australia">Australia</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="China">China</option>
+          <option value="Germany">Germany</option>
+          <option value="France">France</option>
+          <!-- Add more countries as needed -->
+        </select>
+      </div>
+    </div>
+
+    <!-- Fourth Division: Enrollment Promo Code -->
+    <div class="division">
+      <div class="sub-heading">Enrollment promo code</div>
+      <div class="input-group">
+        <label for="promo-code">Promo Code</label>
+        <input type="text" id="promo-code" required>
+      </div>
+    </div>
+
+    <!-- Fifth Division: Sign Up for News and Offers -->
+    <div class="division">
+      <div class="sub-heading">Sign up for our news and offers</div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="british-air

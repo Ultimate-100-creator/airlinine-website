@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>British Airways Help Page</title>
+
+    <link rel="stylesheet" href="styles/header.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f3f3f3;
+            place-items: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, auto);
+            gap: 1.5rem;
+            max-width: 800px;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .grid-item {
+            padding: 1rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition for smooth effect */
+        }
+        .grid-item:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+        h3 {
+            margin-top: 0;
+            color: #003366;
+        }
+        p {
+            margin: 0.5rem 0 0;
+            color: #555;
+        }
+
+        .hero {
+          background-image: url('https://example.com/hero-image.jpg'); /* Replace with a suitable image URL */
+          height: 60vh;
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          text-align: center;
+        }
+
+        .hero h1 {
+          font-size: 3rem;
+        }
+
+        .hero p {
+          font-size: 1.2rem;
+        }
+
+        .form-group {
+          margin-bottom: 15px;
+        }
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="date"] {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+
+        .form {
+          margin: 20px 0;
+          background: white;
+          padding: 15px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          max-width: 800px;
+
+        }
+
+        .btn {
+          background: #004991; /* Button color */
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          text-decoration: none;
+          font-weight: bold;
+          margin-top: 15px;
+          cursor: pointer;
+        }
+
+        .btn:hover {
+          background-color: #003366;
+        }
+
+        .block-container {
+          display: block;
+        }
+
+        .header-2 {
+            background-color: #004080; /* Dark blue background */
+            padding: 5px 10px; /* Add some padding */
+        }
+
+        nav ul {
+            list-style: none; /* Remove bullet points */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Use flexbox for horizontal layout */
+            justify-content: space-around; /* Evenly space the items */
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 10px; /* Space between each list item */
+        }
+
+        nav ul li a {
+            color: orange; /* White text color */
+            text-decoration: none; /* Remove underline */
+            padding: 8px 15px; /* Add padding for clickable area */
+            border-radius: 5px; /* Rounded corners */
+            transition: color 0.3s; /* Smooth background color transition */
+        }
+
+        nav ul li a:hover {
+            color: #003366; /* Darker blue on hover */
+        }
+
+    </style>
+  <body>
+        <!-- Header Section -->
+        <header>
+          <div class="header-container">
+              <div class="logo">
+                  <a href="#">
+                      <img src="images/logo-light.png" alt="British Airways Logo" class="logo">
+                  </a>
+              </div>
+              <nav class="nav-menu">
+                  <ul>
+                      <li><a href="airway-home-page.html">Home</a></li>
+                      <li><a href="#">Flights</a></li>
+                      <li><a href="#">Holidays</a></li>
+                      <li><a href="Privilege-club-page.html">Privilege Club</a></li>
+                      <li><a href="#">Manage My Booking</a></li>
+                  </ul>
+              </nav>
+              <div class="header-right">
+                  <form class="search-bar">
+                      <input type="text" placeholder="Search...">
+                      <button type="submit">Search</button>
+                  </form>
+                  <div class="account-options">
+                      <a href="login-page.html">Log In</a>
+                      <a href="help-page.html">Help</a>
+                  </div>
+              </div>
+          </div>
+      </header>
+    <main>
+
+    <div class="header-2">
+      <h1>Qatar Airways Help</h1>
+  </div >
+
+
+    <nav>
+        <ul>
+            <li class="list"><a href="#travel-requirements">Travel Requirements</a></li>
+            <li><a href="#my-trips">My Trips</a></li>
+            <li><a href="#change-flight">Change Flight</a></li>
+            <li><a href="#name-correction">Name Correction</a></li>
+            <li><a href="#tax-invoice">Tax Invoice</a></li>
+            <li><a href="#missing-baggage">Missing Baggage</a></li>
+            <li><a href="#refund-voucher">Refund & Voucher</a></li>
+            <li><a href="#track-refund">Track a Refund</a></li>
+            <li><a href="#baggage-allowance">Baggage Allowance</a></li>
+            <li><a href="#hotel-stay">Hotel Stay</a></li>
+            <li><a href="#special-services">Special Services</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="hero" style="
+        width: 100%; /* Set the container width */
+        height: 400px; /* Set a fixed height or use `min-height` for flexibility */
+        background-image: url('hn-qsuite-western-couple-dining.jpg'); /* Path to the image */
+        background-size: cover; /* Scale the image to cover the entire container */
+        background-position: center; /* Center the image within the container */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+      ">
+      <h1>Fly With British Airways</h1>
+      <p>Experience luxury and comfort in the skies</p>
+      <a href="#flights" class="btn">Book Now</a>
+  </section>
+
+    <div class="form-container" style="
+      margin-left: 375px;      
+      ">
+        <section id="flights" class="form">
+            <h2>Book a Flight</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <input type="text" id="from" name="from" required>
+                </div>
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <input type="text" id="to" name="to" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <button type="submit" class="btn">Search Flights</button>
+            </form>
+            <div id="results"></div>
+        </section>
+
+        <section id="about" class="form">
+            <h2>About Us</h2>
+            <p>British Airways is the United Kingdom's flag carrier and largest airline, offering a premium experience in air travel.</p>
+        </section>
+
+        <section id="contact" class="form">
+            <h2>Contact Us</h2>
+            <p>Email: contact@britishairways.com</p>
+        </section>
+    </div>
+
+    <div class="grid-container"  style="
+    margin-left: 375px;      
+    ">
+        <section id="travel-requirements" class="grid-item">
+            <h3>Travel Requirements</h3>
+            <p>Your journey is our priority. Find the information you need.</p>
+        </section>
+        
+        <!-- Additional sections for grid layout -->
+        <section id="my-trips" class="grid-item">
+            <h3>My Trips</h3>
+            <p>Manage your upcoming trips...</p>
+        </section>
+
+        <section id="manage-booking" class="grid-item">
+            <h3>Manage My Booking</h3>
+            <p>Access your itinerary and make changes easily.</p>
+        </section>
+
+        <section id="change-flight" class="grid-item">
+            <h3>Flight Change</h3>
+            <p>Select alternative flights that fit your schedule.</p>
+        </section>
+        
+        <section id="change-flight" class="grid-item">
+          <h3>Flight Change</h3>
+          <p>Select alternative flights that fit your schedule.</p>
+        </section>
+
+        <section id="name-correction" class="grid-item">
+          <h3>Name Correction</h3>
+          <p>Request corrections for names on your booking.</p>
+        </section>
+
+        <section id="tax-invoice" class="grid-item">
+          <h3>Tax Invoice</h3>
+          <p>Request a tax invoice by sharing your details.</p>
+        </section>
+
+        <section id="missing-baggage" class="grid-item">
+            <h3>Missing Baggage</h3>
+            <p>Use this tracker to find your bags or make a claim...</p>
+        </section>
+
+        <section id="refund-voucher" class="grid-item">
+            <h3>Refund & Voucher</h3>
+            <p>Request a refund or get the amount back as a voucher...</p>
+        </section>
+
+        <section id="track-refund" class="grid-item">
+            <h3>Track a Refund</h3>
+            <p>Check the current status of your refund...</p>
+        </section>
+        <section id="baggage-allowance" class="grid-item">
+            <h3>Baggage Allowance</h3>
+            <p>Find out what your checked baggage allowance is...</p>
+        </section>
+
+        <section id="hotel-stay" class="grid-item">
+            <h3>Hotel Stay</h3>
+            <p>Request arrangements for a hotel stay in Doha...</p>
+        </section>
+
+        <section id="special-services" class="grid-item">
+            <h3>Special Services</h3>
+            <p>Explore our special services...</p>
+        </section>
+    </div>
+  </body>
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              const navLinks = document.querySelectorAll('nav a');
+              navLinks.forEach(link => {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      const sectionId = event.target.getAttribute('href').slice(1);
+                      const section = document.getElementById(sectionId);
+                      if (section) {
+                          section.scrollIntoView({ behavior: 'smooth' });
+                      }
+                  });
+              });
+          });
+      </script>
+  </body>
+  </html>

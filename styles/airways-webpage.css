@@ -1,0 +1,330 @@
+/* General reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #004080;
+}
+
+
+/*
+.second-header {
+width: 100%;
+overflow: hidden;
+white-space: nowrap;
+box-sizing: border-box;
+}*/
+
+/*
+.second-header p {
+display: inline-block;
+padding-left: 100%;
+animation: marquee 10s linear infinite;
+}
+*/
+
+/* Hero Section */
+.hero {
+background-image: url('download.jpg');
+background-size: cover;
+background-position: center;
+padding: 100px 20px;
+color: #ff6600;
+text-align: center;
+background-position: top;
+}
+
+.hero-content h1 {
+font-size: 3em;
+color: #003366;
+margin-top: 100px;
+}
+
+.hero-content p {
+font-size: 1.5em;
+font-weight: bold;
+margin: 20px 0;
+
+}
+
+.cta-btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: padding-right 0.15s, padding-left 0.15s;
+}
+
+.cta-btn:hover {
+  background-color: #e65c00;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.air-hostess {
+  background-image: url('images/h1-ffp-cards-qsuite-crew.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.join-privilege-club-container{
+  background-color: rgba(50, 50, 50, 0.5); /* Dark transparent background */
+  color: white; /* Text color for better readability */
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 25px;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.join-privilege-club-content {
+  font-size: 15px;
+}
+
+.Join-now-button {
+  padding: 10px 20px;
+  color: white;
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  border-width: 1px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s, color 0.15s;
+}
+
+.Join-now-button:hover {
+  border-color: none;
+  background-color: white;
+  color: #e65c00;
+}
+
+.Join-now-button:active{
+  background-color: #003366;
+  border: none;
+  color: white;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.feature {
+  width: 30%;
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 5px;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.feature:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+margin-top: 0;
+}
+
+/* Featured Flights Section */
+.featured-flights {
+background-color: #fff;
+padding: 50px 20px;
+text-align: center;
+}
+
+.featured-flights h2 {
+font-size: 2.5em;
+margin-bottom: 30px;
+}
+
+.flight-cards {
+display: flex;
+justify-content: space-around;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.flight-card {
+background-color: #f9f9f9;
+padding: 20px;
+border-radius: 10px;
+width: 30%;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+cursor: default;
+transition: border-width 0.15s, border-style 0.15s, border-color 0.15s;
+}
+
+.flight-card h3 {
+font-size: 1.5em;
+margin-bottom: 15px;
+}
+
+.flight-card p {
+font-size: 1.2em;
+margin-bottom: 20px;
+}
+
+.flight-card:hover {
+border-width: 1px;
+border-style: solid;
+border-color: #003366;
+}
+
+.book-btn {
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.15s, padding-left 0.15s, padding-right 0.15s;
+}
+
+.book-btn:hover {
+  background-color: #003366;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+/* Footer Section */
+footer {
+background-color: #003366;
+color: white;
+padding: 20px 0;
+text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.flight-booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background-color: #004080;
+  cursor: default;
+  margin: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 16px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004080;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #003366;
+}
+
+.label {
+  color: #e65c00;
+}
+
+.second-header {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+}
+
+.second-header p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+.logo {
+  width: 100px;
+  left: -25px;
+}
